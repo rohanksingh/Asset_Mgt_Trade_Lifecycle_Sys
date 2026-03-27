@@ -1,46 +1,52 @@
-Asset Management Trade Lifecycle System
-Project Overview
-This project simulates an end-to-end asset management data platform, covering:
+## Asset Management Trade Lifecycle System
+### Project Overview
+### This project simulates an end-to-end asset management data platform, covering:
+```
 •	Trade lifecycle processing 
 •	Portfolio valuation 
 •	Reconciliation with custodian data 
 •	Settlement monitoring 
 •	Data quality validation 
 •	Power BI dashboard reporting 
-
-Business Context
-In asset management firms, trades flow across multiple systems:
+```
+#### Business Context
+#### In asset management firms, trades flow across multiple systems:
+```
 •	Front Office (Order & Execution) 
 •	Middle Office (Risk & Compliance) 
 •	Back Office (Settlement & Accounting) 
-This project replicates that architecture using SQL, Python, and Power BI.
-Architecture
+```
+#### This project replicates that architecture using SQL, Python, and Power BI Architecture
 ``` 
 CSV → Staging Tables → Validation → Core Tables → Views → Power BI Dashboard
 ```
-Tech Stack
+#### Tech Stack
+```
 •	PostgreSQL (Database) 
 •	Python (ETL & Validation) 
 •	SQL (Data Modeling & Reporting) 
 •	Power BI (Dashboard) 
-•	Pandas, SQLAlchemy 
+•	Pandas, SQLAlchemy
+```
 
-Project Components
+#### Project Components
+```
 🔹 Phase 1: Data Model
-•	Portfolio, Instrument, Trade, Market Data tables 
+ •	Portfolio, Instrument, Trade, Market Data tables 
 🔹 Phase 2: Sample Data
-•	Realistic trade, price, and custodian data 
+ •	Realistic trade, price, and custodian data 
 🔹 Phase 3: Reporting & Reconciliation
-•	Portfolio valuation views 
-•	Trade reconciliation logic 
-•	Settlement monitoring 
+ •	Portfolio valuation views 
+ •	Trade reconciliation logic 
+ •	Settlement monitoring 
 🔹 Phase 4: ETL & Data Quality
-•	CSV ingestion 
-•	Validation rules 
-•	Exception handling 
-
-Key Features
-Portfolio Valuation
+ •	CSV ingestion 
+ •	Validation rules 
+ •	Exception handling 
+```
+### Key Features
+#### Portfolio Valuation
+```
 •	Calculates holdings and market value using latest prices 
 Trade Reconciliation
 •	Identifies mismatches between internal and custodian records 
@@ -53,9 +59,9 @@ Power BI Dashboard
 •	Trade breaks 
 •	Settlement status 
 •	Data quality issues 
+```
+### Dashboard Preview
 
-Dashboard Preview
-(Add screenshot here)
 
 How to Run
 1. Create database
