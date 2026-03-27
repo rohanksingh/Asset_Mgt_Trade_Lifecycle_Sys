@@ -83,11 +83,9 @@ python etl/etl_phase4.py
 •	Build dashboard
 ```
 
- ### Key Learnings
-```
-•	Trade lifecycle in asset management 
-•	Data reconciliation techniques 
-•	ETL and data validation patterns 
-•	SQL-based analytics 
-•	Dashboard design for financial systems
-``` 
+## Architecture Diagram
+
+<img width="1377" height="856" alt="image" src="https://github.com/user-attachments/assets/50df5a33-0368-4635-9830-0f33dc27ad87" />
+
+
+[View Editable Version](https://app.diagrams.net/?url=https://raw.githubusercontent.com/rohanksingh/Asset_Mgt_Trade_Lifecycle_Sys/main/docs/Asst_mgt_lifecyl_sys.drawio)
