@@ -62,8 +62,13 @@ Power BI Dashboard
 ```
 ### Dashboard Preview
 
+<img width="1240" height="683" alt="image" src="https://github.com/user-attachments/assets/f754c848-71d7-4efe-bc29-e4953b821663" />
 
-How to Run
+<img width="617" height="756" alt="image" src="https://github.com/user-attachments/assets/cff6a5bb-30bf-4b20-83a9-ba147f4ed45d" />
+
+
+### How to Run
+```
 1. Create database
 CREATE DATABASE asset_mgmt_demo;
 2. Run SQL scripts
@@ -75,11 +80,14 @@ python etl/etl_phase4.py
 4. Open Power BI
 •	Connect to PostgreSQL 
 •	Load views 
-•	Build dashboard 
+•	Build dashboard
+```
 
- Key Learnings
+ ### Key Learnings
+```
 •	Trade lifecycle in asset management 
 •	Data reconciliation techniques 
 •	ETL and data validation patterns 
 •	SQL-based analytics 
-•	Dashboard design for financial systems 
+•	Dashboard design for financial systems
+``` 
