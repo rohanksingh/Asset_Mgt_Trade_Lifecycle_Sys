@@ -1,0 +1,5 @@
+﻿trade_ref,portfolio_code,instrument_code,trade_type,quantity,price,trade_date,settlement_date,custodian_name
+TRD009,PF001,UST10Y,BUY,300000,99.55,3/24/2026,3/28/2026,State Street
+TRD010,PF002,AAPL,BUY,500,188.2,3/24/2026,3/28/2026,State Street
+TRD011,PF001,CORP_BND_1,SELL,100000,101.4,3/24/2026,3/28/2026,State Street
+TRD016,PF001,UST10Y,BUY,100000,99.6,3/24/2026,3/28/2026,State Street

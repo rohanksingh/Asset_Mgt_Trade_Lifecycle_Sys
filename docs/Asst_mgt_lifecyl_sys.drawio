@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.6.1">
+  <diagram name="Page-1" id="UP2vksv9SmRf_HLMTX5m">
+    <mxGraphModel dx="2068" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2F5597;fontColor=#FFFFFF;strokeColor=#1F3864;fontStyle=1;fontSize=22;align=center;verticalAlign=middle;" value="End-to-End Asset Management Trade Lifecycle Architecture" vertex="1">
+          <mxGeometry height="60" width="1620" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F3F3;strokeColor=#666666;fontStyle=1;fontSize=18;" value="&lt;b&gt;Data Sources&lt;/b&gt;" vertex="1">
+          <mxGeometry height="480" width="240" x="50" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=16;" value="Trade CSV&lt;div&gt;\n(trades_input.csv)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="90" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=16;" value="Market Price CSV&lt;div&gt;\n&lt;/div&gt;&lt;div&gt;(market_prices_input.csv)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="70" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontSize=16;" value="Custodian CSV&lt;div&gt;\n&lt;/div&gt;&lt;div&gt;(custodian_trades_input.csv)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="210" x="70" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9EAF7;strokeColor=#5B9BD5;fontStyle=1;fontSize=18;" value="&lt;b&gt;ETL &amp;amp; Data Quality (Python)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="500" width="260" x="350" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5B9BD5;fontSize=16;" value="Data Ingestion\n(pandas / SQLAlchemy)" vertex="1">
+          <mxGeometry height="70" width="180" x="390" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5B9BD5;fontSize=16;" value="Validation Rules\nnulls, duplicates, references, dates" vertex="1">
+          <mxGeometry height="70" width="180" x="390" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5B9BD5;fontSize=16;" value="Exception Handling\ntrade_exceptions / market_price_exceptions / custodian_trade_exceptions" vertex="1">
+          <mxGeometry height="90" width="220" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#70AD47;fontStyle=1;fontSize=18;" value="&lt;b&gt;PostgreSQL Database&lt;/b&gt;" vertex="1">
+          <mxGeometry height="530" width="350" x="700" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#70AD47;fontSize=16;" value="Staging Tables\n&lt;div&gt;stg_trades\n&lt;/div&gt;&lt;div&gt;stg_market_prices\nstg_custodian_trades&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="310" x="720" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#70AD47;fontSize=16;" value="Core Tables\nportfolios, instruments, trades, market_prices, custodian_trades" vertex="1">
+          <mxGeometry height="90" width="220" x="765" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#70AD47;fontSize=16;align=center;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Reporting Views\nvw_positions\&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nvw_portfolio_valuation_clean&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;\nvw_trade_breaks_active\&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nvw_settlement_status&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="765" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#ED7D31;fontStyle=1;fontSize=18;" value="&lt;b&gt;Reporting &amp;amp; Monitoring&lt;/b&gt;" vertex="1">
+          <mxGeometry height="440" width="260" x="1120" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ED7D31;fontSize=16;" value="Portfolio Valuation" vertex="1">
+          <mxGeometry height="55" width="180" x="1160" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ED7D31;fontSize=16;" value="Trade Breaks" vertex="1">
+          <mxGeometry height="55" width="180" x="1160" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ED7D31;fontSize=16;" value="Settlement Monitoring" vertex="1">
+          <mxGeometry height="55" width="180" x="1160" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ED7D31;fontSize=16;" value="Data Quality Exceptions" vertex="1">
+          <mxGeometry height="55" width="180" x="1160" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#7E57C2;fontStyle=1;fontSize=18;" value="&lt;b&gt;Power BI Dashboard&lt;/b&gt;\nInteractive Portfolio &amp;amp; Operations Views" vertex="1">
+          <mxGeometry height="250" width="230" x="1450" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#BF9000;fontStyle=1;fontSize=18;" value="&lt;b&gt;Business Consumers&lt;/b&gt;\nPortfolio Managers | Risk &amp;amp; Compliance | Operations | Product / BA" vertex="1">
+          <mxGeometry height="90" width="640" x="520" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-21" edge="1" parent="1" source="1tu-C6jnT8g2lteaXmvI-2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5B9BD5;strokeWidth=3;endArrow=block;endFill=1;" target="1tu-C6jnT8g2lteaXmvI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-22" edge="1" parent="1" source="1tu-C6jnT8g2lteaXmvI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#70AD47;strokeWidth=3;endArrow=block;endFill=1;" target="1tu-C6jnT8g2lteaXmvI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-23" edge="1" parent="1" source="1tu-C6jnT8g2lteaXmvI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ED7D31;strokeWidth=3;endArrow=block;endFill=1;" target="1tu-C6jnT8g2lteaXmvI-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-24" edge="1" parent="1" source="1tu-C6jnT8g2lteaXmvI-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7E57C2;strokeWidth=3;endArrow=block;endFill=1;" target="1tu-C6jnT8g2lteaXmvI-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1tu-C6jnT8g2lteaXmvI-25" edge="1" parent="1" source="1tu-C6jnT8g2lteaXmvI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF9000;strokeWidth=3;endArrow=block;endFill=1;" target="1tu-C6jnT8g2lteaXmvI-20" value="Insights / KPIs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1565" y="670" />
+              <mxPoint x="820" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
