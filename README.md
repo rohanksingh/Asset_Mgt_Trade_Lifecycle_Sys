@@ -31,15 +31,15 @@ CSV → Staging Tables → Validation → Core Tables → Views → Power BI Das
 
 #### Project Components
 ```
-🔹 Phase 1: Data Model
+ Phase 1: Data Model
  •	Portfolio, Instrument, Trade, Market Data tables 
-🔹 Phase 2: Sample Data
+ Phase 2: Sample Data
  •	Realistic trade, price, and custodian data 
-🔹 Phase 3: Reporting & Reconciliation
+ Phase 3: Reporting & Reconciliation
  •	Portfolio valuation views 
  •	Trade reconciliation logic 
  •	Settlement monitoring 
-🔹 Phase 4: ETL & Data Quality
+ Phase 4: ETL & Data Quality
  •	CSV ingestion 
  •	Validation rules 
  •	Exception handling 
